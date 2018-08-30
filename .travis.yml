@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: POtqo7zGH08htQ1gvzF6Cz9+0wJG7Pat2RSMp0MpzHAw+bJ0IqDHoSW4geBPHWTGqbJhfae48N3ZdU0eKSLm2PotFZ8z7+g8qeVdzoLMlUHbQJUbvBn18QXbjjn0M1MQ/maPUEo0BWUE4ArhyKPzvGfGcS2Z14SJVZ/hHKnltnBYm7Cgi2qkctiurnW5W2NnSzcWyRVju8nUjHYHaejjfDYqRoo43wV8z6moT8XvRaGDDk/c15BRmSPphWsEkbyneHJhOV+ElYDEhficvqUvr9RaHBNcBTQhaTNZhyiGWJXc/vxUq2RLlplEFpQ3IPDom2D7wgi0y81n3nJ1p/ElmfP0QkBd6EVsnt6z8QJwCXPwpaWYrdD6neIXALIkWszCHoybhsPv49HnlFcxdmPyWb8xZ7aKInrOZNhqdeXnKZhcCsK0XQNEyCpez6KrmZMRb1tRGezui/3ZhR2dQQetxBxnHFFG3Wpac/7nAl7LYqXS/IwhzoIIlu4lfXMNs+VJPiRUWXIG2YfdakkmFiaLQ4j3bPqPgqOlw8pgZEbdekRjBC9SB5B9EMYOsVMyXgYROanGEpMcfVSw9/DVSS718l4lSkNVr/9mOWnOm0RIlAwbrCPy4cTjWeDotsUGO1UXuB3qIPK3wBdM4/JscKwSex3lG2HjXzc0855koca3j9o=
+  app: fast-spire-37759
+  on:
+    repo: jayshol/react-hot-cold
